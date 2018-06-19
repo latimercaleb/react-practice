@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 // Import Component
 import Wrapper from './namespace'
+import Iterable from './iterable'
 const ctitle = "Sample app"
 
 class App extends Component {
@@ -18,6 +19,8 @@ class App extends Component {
         </p>
         <hr/>
         <Wrapper />
+        <hr/>
+        <Iterable />
       </div>
     );
   }
