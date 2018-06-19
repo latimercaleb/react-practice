@@ -4,8 +4,8 @@ import './App.css';
 // Import Component
 import Wrapper from './namespace'
 import Iterable from './iterable'
+import Stateful from './simpleState'
 const ctitle = "Sample app"
-
 class App extends Component {
   render() {
     return (
@@ -20,6 +20,7 @@ class App extends Component {
         <div className='custom-components-list'>
         <Wrapper />
         <Iterable />
+        <Stateful />
         </div>
       </div>
     );
