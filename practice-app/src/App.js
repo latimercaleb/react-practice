@@ -5,6 +5,7 @@ import './App.css';
 import Wrapper from './namespace'
 import Iterable from './iterable'
 import Stateful from './simpleState'
+import PropExample from './simple-props'
 const ctitle = "Sample app"
 class App extends Component {
   render() {
@@ -18,9 +19,10 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div className='custom-components-list'>
-        <Wrapper />
-        <Iterable />
-        <Stateful />
+          <Wrapper />
+          <Iterable />
+          <Stateful />
+          <PropExample />
         </div>
       </div>
     );
