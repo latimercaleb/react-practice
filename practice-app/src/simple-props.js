@@ -9,19 +9,7 @@ class PropX extends Component{
   constructor(props){
     super(props)
     this.state = {
-      data:[{
-        name: 'Grrot',
-        city: "grav",
-        zip: 32453
-      },{
-        name: 'Grrot',
-        city: "grav",
-        zip: 32453
-      },{
-        name: 'Grrot',
-        city: "grav",
-        zip: 32453
-      }]
+      data:[]
     }
   }
   //Lifecycle hook that will grab data right before component is mounted to the dom
