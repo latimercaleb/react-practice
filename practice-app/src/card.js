@@ -9,8 +9,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 const listStyles = {
       border: '1px groove black',
-      'background-color': '#E2F1FF',
-      'border-radius': '5px',
+      'backgroundColor': '#E2F1FF',
+      'borderRadius': '5px',
       'margin': '3px'
 }
 class Card extends Component{
