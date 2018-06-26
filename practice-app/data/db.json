@@ -1,0 +1,53 @@
+{
+  "users": [{
+      "id": 1,
+      "name": "X",
+      "type": "Stoic Protagonist"
+    },
+    {
+      "id": 2,
+      "name": "Lan",
+      "type": "Aggressive hero"
+    },
+    {
+      "id": 3,
+      "name": "Zero",
+      "type": "Villain turned hero"
+    },
+    {
+      "id": 4,
+      "name": "Bass",
+      "type": "Unshakeable Force"
+    },
+    {
+      "id": 5,
+      "name": "Rush",
+      "type": "Super Good Boy"
+    },
+    {
+      "id": 6,
+      "name": "Sigma",
+      "type": "Unkillable Antagonist"
+    },
+    {
+      "id": 7,
+      "name": "Dr.Light",
+      "type": "Father/Creator/Item Man"
+    },
+    {
+      "id": 8,
+      "name": "Wily",
+      "type": "Mad Scientist"
+    },
+    {
+      "id": 9,
+      "name": "Treble",
+      "type": "Super Bad Boy"
+    },
+    {
+      "id": 10,
+      "name": "Proto",
+      "type": "Blues by Light"
+    }
+  ]
+}
