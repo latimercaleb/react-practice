@@ -43,3 +43,12 @@
 .good-list {
   list-style-position: inside;
 }
+
+.avatar-bg {
+  background-color: #B0BECC !important;
+}
+
+.sort-btn {
+  margin-right: 10px !important;
+  float: right;
+}
