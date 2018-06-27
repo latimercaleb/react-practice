@@ -8,7 +8,7 @@ import StateX from './simpleState'
 import PropX from './simple-props'
 import EventX from './sevent'
 import RevList from './reversedList'
-import Monolith from './Monolith'
+//import Monolith from './Monolith'
 const ctitle = "Sample app"
 class App extends Component {
   render() {
@@ -28,7 +28,7 @@ class App extends Component {
           <PropX />
           <EventX />
           <RevList />
-          <Monolith />
+
         </div>
       </div>
     );
