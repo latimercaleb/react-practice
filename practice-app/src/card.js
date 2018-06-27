@@ -16,12 +16,12 @@ const listStyles = {
 class Card extends Component{
   render(){
     return(
-          <List style={listStyles} dense>
+          <List style={listStyles}>
             {this.props.data.map(dataItem => {
                   return (
                         <ListItem key={dataItem.id}>
                               <ListItemText primary={dataItem.name}
-                                                    secondary={dataItem.company.name}/>
+                                            secondary={dataItem.company.name}/>
                         </ListItem>
                   )
             })}

@@ -44,9 +44,9 @@ export default class EventSim extends React.Component{
       render(){
             return(
                   <div style={componentStyle}>
-                  <h2>Input handler practice</h2>
-                  <Grid container spacing={24}>
-                        <Grid item xs={12} sm={6}>
+                    <h2>Input handler practice</h2>
+                    <Grid container spacing={24}>
+                          <Grid item xs={12} sm={6}>
                               <Paper style={paperStyle}>
                                     <p>{this.state.count}</p>
                                     <button onClick={this.clicked}>Click to up count</button>
@@ -56,11 +56,11 @@ export default class EventSim extends React.Component{
                               <Paper style={paperStyle}>
                                     <p>{this.state.input}</p>
                                     <input type='text'
-                                                placeholder='Typing makes a paragraph...'
-                                                onChange={this.changed} />
+                                           placeholder='Typing makes a paragraph...'
+                                           onChange={this.changed} />
                               </Paper>
                         </Grid>
-                  </Grid>
+                      </Grid>
                   </div>
             )
       }
