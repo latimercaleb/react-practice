@@ -4,8 +4,10 @@ import React, { Component } from 'react';
 import cuid from 'cuid';
 
 // For building immutable component states...
-import { fromJS } from 'immutable';
-
+import { fromJS,toJS } from 'immutable';
+// Sub-components in React
+import MonolithHeader from './monolith-header'
+import ArticleList from './monolith-article'
 export default class MyFeature extends Component {
   // The state of this component is consists of
   // three properties: a collection of articles,
@@ -46,7 +48,7 @@ export default class MyFeature extends Component {
       summary: '',
     }),
   }
-
+  // All of these events return undefined which is fine since they do their job with processing
   // When the title of a new article changes, update the state
   // of the component with the new title value, by using "set()"
   // to create a new map.
@@ -137,54 +139,22 @@ export default class MyFeature extends Component {
   }
 
   render() {
-    const {
-      articles,
+    const { articles,
       title,
       summary,
     } = this.data.toJS();
 
     return (
       <section>
-        <header>
-          <h1>Articles</h1>
-          <input
-            placeholder="Title"
-            value={title}
-            onChange={this.onChangeTitle}
-          />
-          <input
-            placeholder="Summary"
-            value={summary}
-            onChange={this.onChangeSummary}
-          />
-          <button onClick={this.onClickAdd}>Add</button>
-        </header>
-        <article>
-          <ul>
-            {articles.map(i => (
-              <li key={i.id}>
-                <a
-                  href="#"
-                  title="Toggle Summary"
-                  onClick={this.onClickToggle.bind(null, i.id)}
-                >
-                  {i.title}
-                </a>
-                &nbsp;
-                <a
-                  href="#"
-                  title="Remove"
-                  onClick={this.onClickRemove.bind(null, i.id)}
-                >
-                  &#10007;
-                </a>
-                <p style={{ display: i.display }}>
-                  {i.summary}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </article>
+        <MonolithHeader name = "Articles"
+              title = {title}
+              summary = {summary}
+              onChangeTitle = {this.onChangeTitle}
+              onChangeSummary = {this.onChangeSummary}
+              onClickAdd = {this.onClickAdd}/>
+        <ArticleList articles={articles}
+                     onClickToggle={this.onClickToggle}
+                     onClickRemove={this.onClickRemove}/>
       </section>
     );
   }
